@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './SideNavbar.css'
 import { FaCircleChevronRight, } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
 import reachinLogo from "../../assets/reachinbox-logo.png"
@@ -50,7 +49,7 @@ const SideNavbar = ({ children }) => {
     },
   ]
   return (
-    <div className="mainContainer relative manageuser_bg">
+    <div className="flex font-sans min-h-screen relative">
       <div className="sidebar bg-[#101113] w-[80px] py-8 flex flex-col border-[#343A40] border-0 border-r">
         <div className=' flex items-center justify-center h-fit cursor-pointer'>
           <img src={reachinLogo} alt='logo' className='' />
@@ -70,7 +69,7 @@ const SideNavbar = ({ children }) => {
           <img className="h-8 w-8" src={userIcon} alt="userIcon" />
         </div>
       </div>
-      <main>{children}</main>
+      <main className='w-[100%]'>{children}</main>
     </div >
   )
 }
