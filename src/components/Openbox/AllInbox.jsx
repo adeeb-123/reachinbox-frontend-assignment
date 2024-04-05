@@ -47,9 +47,9 @@ const AllInbox = () => {
                             <img src={greenCircle} alt='greenCircle' className='text-[#57E0A6] h-fit' />
                             <p className='text-[#57E0A6]'>Interested</p>
                         </div>
-                        <div className='flex flex-row gap-1 bg-[#222426] text-xs h-fit items-center px-2 py-1 rounded-2xl cursor-pointer'>
-                            <img src={Frame23} alt='send' className='h-fit' />
-                            <p>Campaign Name</p>
+                        <div className='flex flex-row gap-1 bg-[#222426] items-center px-2 py-3 rounded-2xl cursor-pointer'>
+                            <img src={Frame23} alt='send' className='w-[15px]' />
+                            <p className='text-xs'>Campaign</p>
                         </div>
                     </div>
                 </div>
