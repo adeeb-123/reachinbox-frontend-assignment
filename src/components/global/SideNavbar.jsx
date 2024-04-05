@@ -23,28 +23,28 @@ const SideNavbar = ({ children }) => {
       icon: Home,
     },
     {
-      path: "/openbox",
+      path: "/inbox",
       icon: Email,
     },
     {
-      path: "/openbox",
+      path: "/inbox",
       icon: Email1,
     },
     {
-      path: "/openbox",
+      path: "/inbox",
       icon: Frame23,
     },
     {
-      path: "/openbox",
+      path: "/inbox",
       icon: Email2,
     },
 
     {
-      path: "/openbox",
+      path: "/inbox",
       icon: Frame19,
     },
     {
-      path: "/openbox",
+      path: "/inbox",
       icon: barChart,
     },
   ]

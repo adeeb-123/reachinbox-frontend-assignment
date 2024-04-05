@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../assets/Logo.png"
 import googleLogo from "../assets/google.png"
+import { Link, NavLink } from 'react-router-dom'
 
 const Login = () => {
     return (
@@ -15,12 +16,18 @@ const Login = () => {
                         <p className='font-bold tracking-wide text-lg'>Create a new account</p>
                         <div className='border border-[#707172] rounded-sm flex items-center justify-center gap-4 p-4 w-[70%]'>
                             <img src={googleLogo} alt='google logo' className='w-fit max-w-fit' />
-                            <p className=''>Sign Up with Google</p>
+                            <Link to={'/openbox'}>
+                                <p className=''>Sign Up with Google</p>
+                            </Link>
                         </div>
                     </div>
                     <div className='text-white flex flex-col justify-between items-center gap-6'>
+                        <NavLink to={'/openbox'} className='w-[100%] text-center'>
                         <button className='bg-gradient-to-br from-blue-600 via-blue-800 to-blue-900 p-4 rounded-lg w-[40%] text-md'>Create an Account</button>
-                        <p className='text-[#909296]'>Already have an account? <span className='text-white'>Sign In</span></p>
+                        </NavLink>
+                        <Link to={'/openbox'}>
+                            <p className='text-[#909296]'>Already have an account? <span className='text-white'>Sign In</span></p>
+                        </Link>
                     </div>
                 </div>
             </div>
